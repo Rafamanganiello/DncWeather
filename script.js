@@ -45,8 +45,8 @@ btn.addEventListener("click", () =>{
 
  // lat: -24.73, long: -53.75,
 
- const express = require('express');
- const httpProxy = require('http-proxy');
+ const express = import('express');
+ const httpProxy = import('http-proxy');
  
  const app = express();
  const proxy = httpProxy.createProxyServer();
