@@ -201,11 +201,10 @@ transition: 0.4s;
     width: 1024px;
     height: 75px;
     background-color: rgba(255, 255, 255, 1);
-    border: 10px blue;
+    border: 1px solid rgba(12, 112, 242, 1);
     border-radius: 10px;
     margin-bottom: 100px;
     margin-top: 10px;
-    border: none;
     
 }
 
