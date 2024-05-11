@@ -2,12 +2,12 @@ async function getAdressByCep(){
     const cep = document.getElementById('cep').value;
     console.log(cep)
     try{
-        const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
+        const response = await fetch(`https://api.postmon.com.br/v1/cep/${cep}`);
         const data = await response.json()
         console.log(data); 
         document.getElementById('rua').value = data.logradouro;
         document.getElementById('bairro').value = data.bairro;
-        document.getElementById('estado').value = data.uf;
+        document.getElementById('estado').value = data.estado_info.nome;
     } catch (error){
         alert(error.message);
     }
@@ -42,8 +42,3 @@ btn.addEventListener("click", () =>{
     getAdressByCep();
     getPrevisao();
  })
-
-
-
- 
- 

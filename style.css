@@ -145,7 +145,6 @@ section label{
 #botao:hover{
 opacity: 1.0;
 transition: 0.4s;
-transform: translateY(-5px);
 }
 
 #cepHeader{
@@ -202,7 +201,7 @@ transform: translateY(-5px);
     width: 1024px;
     height: 75px;
     background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(12, 112, 242, 1);
+    border: solid 2px rgba(12, 112, 242, 1);
     border-radius: 10px;
     margin-bottom: 100px;
     margin-top: 10px;
